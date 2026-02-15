@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttery Haven | artisanal bakery & sweets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <span>🛒 your basket</span>
+            <i class="fas fa-times" id="closeCart"></i>
+        </div>
+        <div id="cartItemsContainer"></div>
+        <div class="cart-total" id="cartTotal">total: $0.00</div>
+    </div>
+
+    <div class="bakery-website">
+        <div class="top-bar">
+            <div class="logo">
+                <i class="fas fa-baguette"></i> BUTTERY HAVEN
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link active" data-section="home">Home</a>
+                <a class="nav-link" data-section="products">Products</a>
+                <a class="nav-link" data-section="story">Story</a>
+                <a class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="cart-icon" id="openCartBtn">
+                <i class="fas fa-basket-shopping"></i> cart <span id="cartCount">0</span>
+            </div>
+        </div>
+
+        <section id="home" class="section active-section">
+            <div class="delivery-banner">
+                <i class="fas fa-truck"></i> We are delivering in Ahmedabad Only. Free delivery on order above Rs. 500. <i class="fas fa-check-circle"></i>
+            </div>
+
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>The Incredible Gift of Taste</h1>
+                    <div class="fresh-badge"><i class="fas fa-gift"></i> nostalgia in every bite</div>
+                    <p style="font-size:1.2rem; color:#5f3f2b; margin-top:1rem;">Who said you cannot gift nostalgia to your near and dear ones?</p>
+                </div>
+                <div class="hero-img">
+                    <img src="./img/bg1.jpg" alt="fresh bread">
+                </div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-star"></i> What People Are Saying</div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="testimonial-text">"You can trust products from this bakery house and they will serve you the best, I've been visiting this brand since my childhood and yet I have never felt any disappointment."</div>
+                    <div class="testimonial-author"><i class="fas fa-user-check"></i> – longtime customer</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="testimonial-text">"I visited here randomly and found it great. A decent bakery with very good ambiance and wide range of products. The best thing is its vegetarian. I tried chocolate mousse and it was sooo yummy."</div>
+                    <div class="testimonial-author"><i class="fas fa-user-check"></i> – random visitor</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="testimonial-text">"One of the best bakeries in Ahmedabad. Cakes, pastries and brownies are always the best in taste. Their price totally justifies the quality and taste."</div>
+                    <div class="testimonial-author"><i class="fas fa-user-check"></i> – regular guest</div>
+                </div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-store"></i> Visit Our Bakeries</div>
+            <div class="visit-section">
+                <div class="visit-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Sweet Oasis</h3>
+                    <p>9 AM – 9 PM</p>
+                    <small>open daily</small>
+                </div>
+                <div class="visit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fresh from the Oven</h3>
+                    <p><i class="fas fa-phone-alt"></i> (079) 2640 5956</p>
+                    <small>call for orders</small>
+                </div>
+                <div class="visit-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h3>Ahmedabad</h3>
+                    <p>free delivery > ₹500</p>
+                    <small>only city limits</small>
+                </div>
+            </div>
+
+            <div class="bottom-showcase">
+                <div class="visit-today"><i class="fas fa-store"></i> Vait Us Today</div>
+                <div class="brand-duo">
+                    <div class="brand-item"><img src="./img/Cavies Baking.jpg" alt="cavies baking"><span>Cavies Baking</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="section-title"><i class="fas fa-cookie"></i> our signature products</div>
+            <div class="product-grid" id="productGrid">
+                <div class="product-card" data-name="Wheat Pizza Bread" data-price="12.50" data-img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&auto=format&fit=crop">
+                    <img class="product-img" src="./img/Wheat Based Pizza Bread.jpg" alt="pizza bread">
+                    <div class="product-info">
+                        <div class="product-title">Wheat Based Pizza Bread</div>
+                        <div class="product-desc">whole wheat flour, enriched with essential ingredients</div>
+                        <div class="price-row"><span class="price">$12.50</span><button class="add-btn"><i class="fas fa-cart-plus"></i> add</button></div>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Royal Hazelnut Cookies" data-price="8.90" data-img="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&auto=format&fit=crop">
+                    <img class="product-img" src="./img/Royal Hazelnut Cookies.jpg" alt="hazelnut cookies">
+                    <div class="product-info">
+                        <div class="product-title">Royal Hazelnut Cookies</div>
+                        <div class="product-desc">cocoa solids, hazelnuts — luxurious treat</div>
+                        <div class="price-row"><span class="price">$8.90</span><button class="add-btn"><i class="fas fa-cart-plus"></i> add</button></div>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Chocolate Fudge Truffle Cheesecake" data-price="14.20" data-img="https://images.unsplash.com/photo-1548907040-4baa42d10919?w=300&auto=format&fit=crop">
+                    <img class="product-img" src="./img/Cheesecake.jpg" alt="cranberry chocolate">
+                    <div class="product-info">
+                        <div class="product-title">Chocolate Fudge Truffle Cheesecake</div>
+                        <div class="product-desc">If you're a chocolate lover,</div>
+                        <div class="price-row"><span class="price">$14.20</span><button class="add-btn"><i class="fas fa-cart-plus"></i> add</button></div>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Milk Fruit & Nut" data-price="11.50" data-img="https://images.unsplash.com/photo-1606312619075-1a209b6c3bb6?w=300&auto=format&fit=crop">
+                    <img class="product-img" src="./img/chocolate_croissants.jpg" alt="fruit nut chocolate">
+                    <div class="product-info">
+                        <div class="product-title">Chocolate Croissants</div>
+                        <div class="product-desc"> Puff pastry </div>
+                        <div class="price-row"><span class="price">$11.50</span><button class="add-btn"><i class="fas fa-cart-plus"></i> add</button></div>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Artisan Sourdough" data-price="9.50" data-img="https://images.unsplash.com/photo-1585478259715-876a41c3d7e2?w=300&auto=format&fit=crop">
+                    <img class="product-img" src="./img/Artisan Sourdough.jpg" alt="sourdough">
+                    <div class="product-info">
+                        <div class="product-title">Artisan Sourdough</div>
+                        <div class="product-desc">crunchy crust, soft heart · 900g</div>
+                        <div class="price-row"><span class="price">$9.50</span><button class="add-btn"><i class="fas fa-cart-plus"></i> add</button></div>
+                    </div>
+                </div>
+                <div class="product-card" data-name="Almond Croissant" data-price="4.80" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300&auto=format&fit=crop">
+                    <img class="product-img" src="./img/Almond Croissant.jpg" alt="croissant">
+                    <div class="product-info">
+                        <div class="product-title">Almond Croissant</div>
+                        <div class="product-desc">flaky, buttery, with almond cream</div>
+                        <div class="price-row"><span class="price">$4.80</span><button class="add-btn"><i class="fas fa-cart-plus"></i> add</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-showcase">
+                <div class="visit-today"><i class="fas fa-store"></i> Vait Us Today</div>
+                <div class="brand-duo">
+                    <div class="brand-item"><img src="./img/Cavies Baking.jpg" alt="cavies baking"><span>Cavies Baking</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="section">
+            <div class="section-title"><i class="fas fa-book-open"></i> our story</div>
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>From a small oven to your table</h2>
+                    <p>Founded in 1987 by grandma Elisa, our bakery started with a single wood-fired oven and a passion for honest bread. Today, we still use the same sourdough starter — and the same love.</p>
+                    <p>We are proud to be a 100% vegetarian bakery, using only the finest ingredients. Every croissant is folded by hand, every cake is decorated with care. We believe in local grains, real butter, and the kind of treats that make you close your eyes.</p>
+                </div>
+                <div class="story-img">
+                    <img src="./img/bakery interior.jpg" alt="bakery interior">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-title"><i class="fas fa-envelope"></i> get in touch</div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>visit or write</h3>
+                    <div class="info-item"><i class="fas fa-map-pin"></i> 24 Baker Street, Ahmedabad</div>
+                    <div class="info-item"><i class="fas fa-phone-alt"></i> +91 79 2640 5956</div>
+                    <div class="info-item"><i class="fas fa-envelope"></i> hello@butteryhaven.com</div>
+                    <div class="info-item"><i class="fas fa-clock"></i> MONDAY - SATURDAY 9am – 9pm</div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-group"><input type="text" placeholder="your name"></div>
+                    <div class="form-group"><input type="email" placeholder="email address"></div>
+                    <div class="form-group"><textarea rows="4" placeholder="your message..."></textarea></div>
+                    <button class="submit-btn">send message <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a class="nav-link" data-section="home">Home</a>
+                <a class="nav-link" data-section="products">Products</a>
+                <a class="nav-link" data-section="story">Story</a>
+                <a class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="copyright">
+                <i class="far fa-copyright"></i> 2026 Buttery Haven. All rights reserved.  |  R15
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
