@@ -39,6 +39,10 @@ No frameworks used. Built completely from scratch.
 ---
 
 ## 📸 Screenshots
+<img width="1661" height="857" alt="ss1_day22" src="https://github.com/user-attachments/assets/1a5f5d9a-0199-4021-89d4-e5d314048f72" />
+<img width="1675" height="860" alt="ss2_day22" src="https://github.com/user-attachments/assets/899b6b71-c4bc-429f-ba71-eec1fdd17463" />
+<img width="1689" height="866" alt="ss3_day22" src="https://github.com/user-attachments/assets/a3b5ba17-14cd-4113-9e8f-b08cf91c37be" />
+<img width="1625" height="755" alt="ss4_day22" src="https://github.com/user-attachments/assets/243494d8-d9df-449b-96d2-ed7256989709" />
 
 ---
 
@@ -47,4 +51,5 @@ No frameworks used. Built completely from scratch.
 
 
 If you like this project, consider giving it a ⭐ on GitHub.
+
 
